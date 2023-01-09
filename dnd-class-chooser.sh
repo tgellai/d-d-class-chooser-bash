@@ -1,5 +1,19 @@
 #!/bin/bash
-. ./source-hun.sh
+
+echo "Language?"
+sleep 0.7
+echo "1) English"
+sleep 0.7
+echo "2) Hungarian"
+
+read N
+clear
+case $N in
+    1) LANG="source-eng.sh";;
+    2) LANG="source-hun.sh"
+esac
+
+. ./${LANG}
 
 echo $START
 sleep 1
