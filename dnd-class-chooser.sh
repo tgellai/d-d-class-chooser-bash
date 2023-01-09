@@ -213,7 +213,81 @@ case $N in
     ;;
 
     3) echo $qMeleeRanged
-    
+        sleep 0.7
+        echo "1) $aRanged"
+        sleep 0.7
+        echo "2) $aMelee"
+        echo ""
+
+        read N; clear
+        case $N in
+            1) echo $qSoPeoples
+                sleep 0.7
+                echo "1) $aPeopleLikeMe"
+                sleep 0.7
+                echo "2) $aRangAnim"
+                echo ""
+
+                read N; clear
+                case $N in
+                    1) echo $qSneaky
+                        sleep 0.7
+                        echo "1) $aN2"
+                        sleep 0.7
+                        echo "2) $aLikeNight"
+                        echo ""
+
+                        read N; clear
+                        case $N in
+                            1) echo $qSpellsMelee
+                                sleep 0.7
+                                echo "1) $aMeleeN"
+                                sleep 0.7
+                                echo "2) $aSpellsBonus"
+                                echo ""
+
+                                read N; clear
+                                case $N in
+                                    1) echo $rBard;;
+                                    2) echo $qWealthy
+                                        sleep 0.7
+                                        echo "1) $aQuestion"
+                                        sleep 0.7
+                                        echo "2) $aMeh"
+                                        echo ""
+
+                                        read N; clear
+                                        case $N in
+                                            1) echo $rRouge;;
+                                            2) echo $qMartialArts
+                                                sleep 0.7
+                                                echo "1) $aN5"
+                                                sleep 0.7
+                                                echo "2) $aJustice"
+                                                echo ""
+
+                                                read N; clear
+                                                case $N in
+                                                    1) echo $rPaladin ;;
+                                                    2) echo $rMonk
+                                                esac
+
+                                        esac
+                                
+                                esac
+                            ;;
+
+                            2) echo $pBatman; sleep 2; clear
+                                echo $rRouge
+                        
+                        esac
+                    ;;
+
+                    2) echo $rRanger
+                esac
+            ;;
+            2) ...
+        esac
     ;;
 
     *) echo $ERROR;
