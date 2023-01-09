@@ -4,10 +4,11 @@
 function forLosers () { echo "A $@ a veszteseknek van." ; }
 
 START="VÁGJUNK BELE!"
+ERROR="Helytelen bevitel, próbálja újra!"
 
 #KÉRDÉSEK
 qMagicOrSmash="Varázsolni akarsz vagy inkább zúzni?"
-qRelihious="Vallásos vagy?"
+qReligious="Vallásos vagy?"
 qLearn="Szeretsz tanulni?"
 qMusic="Zenei beállítottságú vagy?"
 qBornMagic="Varázserővel születtél?"
@@ -50,7 +51,7 @@ aPrefAnimal="Jobban szeretem az állatokat, mint az embereket."
 aBoth="Nem lehet mindkettőt?"
 aFluffy="Ők olyan pihepuhák!"
 aEhOk="Hát... rendben vannak."
-aPeopleLikeMe="$Y1 Az emberek, általában kedvelnek!"
+aPeopleLikeMe="$aY1 Az emberek, általában kedvelnek!"
 aLikeNight="Alattomos, akár az éjszaka!"
 aMeleeN="$aY4 $(forLosers közelharc)"
 aSpellsBonus="$aN1 A varázslás többet jelent."
