@@ -286,7 +286,33 @@ case $N in
                     2) echo $rRanger
                 esac
             ;;
-            2) ...
+
+            2) echo $qCause
+                sleep 0.7
+                echo "1) $aBeliefs"
+                sleep 0.7
+                echo "2) $aMoney"
+                echo ""
+
+                read N; clear
+                case $N in
+                    1) echo $qMartialArts
+                        sleep 0.7
+                        echo "1) $aN5"
+                        sleep 0.7
+                        echo "2) $aJustice"
+                        echo ""
+
+                        read N; clear
+                        case $N in
+                            1) echo $rPaladin ;;
+                            2) echo $rMonk
+                        esac
+                    ;;
+
+                    2) ...
+                esac
+
         esac
     ;;
 
