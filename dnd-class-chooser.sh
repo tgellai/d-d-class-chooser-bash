@@ -310,7 +310,20 @@ case $N in
                         esac
                     ;;
 
-                    2) ...
+                    2) echo $qCivil
+                        sleep 0.7
+                        echo "1) $aDontEatPeople"
+                        sleep 0.7
+                        echo "2) $aWild"
+                        echo ""
+
+                        read N; clear
+                        case $N in
+                            1) echo $pRelief; sleep 3; clear
+                                echo $rFighter
+                                ;;
+                            2) echo $rBarbarian
+                        esac
                 esac
 
         esac
